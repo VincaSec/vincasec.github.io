@@ -62,6 +62,8 @@ webmaster_verifications:
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
+favicon: favicon.png
+
 # Web Analytics Settings
 analytics:
   google:
