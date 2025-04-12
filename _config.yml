@@ -18,7 +18,7 @@ title: VincaSec # the main title
 
 tagline: Security research | CTF | Networks # it will display as the subtitle
 
-description: # used by seo meta and the atom feed
+description: Cybersecurity insights, CTF writeups, network analysis, and infosec tutorials.
 
 
 # Fill in the protocol & hostname for your site.
@@ -96,7 +96,7 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-theme_mode: # [light | dark]
+theme_mode: dark
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
