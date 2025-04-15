@@ -315,7 +315,7 @@ sudo LD_LIBRARY_PATH=/tmp apache2 -f /etc/apache2/apache2.conf -d /etc/apache2
 As expected, Apache loaded `libcrypt.so.1` from `/tmp`, executed `_init()`, and granted me a root shell.
 
 ```bash
-root@Hijack:/roots cat root.txt
+root@Hijack:/root# cat root.txt
 HIJACK
 THM{b91e---------------}
 ```
