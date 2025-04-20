@@ -16,9 +16,9 @@ timezone: Europe/Belgrade
 
 title: VincaSec # the main title
 
-tagline: Security research | CTF | Networks # it will display as the subtitle
+tagline: Security enthusiast | CTF | Networks # it will display as the subtitle
 
-description: Cybersecurity insights, CTF writeups, network analysis, and infosec tutorials.
+description: CTF writeups, network analysis, malware analysis and infosec tutorials
 
 
 # Fill in the protocol & hostname for your site.
@@ -47,12 +47,13 @@ social:
 
 # markdown: kramdown
 # theme: minima
-#plugins:
-#  - jekyll-seo-tag
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Site Verification Settings
 webmaster_verifications:
-  google: # fill in your Google verification code
+  google: GWh6RllNoDSqO03sfjK7TB7t4piDMOubZgY8fqxAwQ8
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
