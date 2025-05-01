@@ -6,8 +6,6 @@ image: /assets/2025/THM/Hijack/logo.png
 alt: "tryhackme wallpaper"
 ---
 
-### Initial Enumeration
-
 As always, I began with an `nmap` scan to identify open ports and running services on the target machine.
 
 ```bash 

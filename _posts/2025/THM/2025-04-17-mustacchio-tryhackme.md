@@ -6,8 +6,6 @@ image: /assets/2025/THM/Mustacchio/logo.png
 alt: "tryhackme wallpaper"
 ---
 
-### Initial Enumeration 
-
 The first step in any CTF or penetration test is to perform reconnaissance. I used Nmap, port scanner, to identify what services the target machine was running and what ports were open.
 
 ```bash
