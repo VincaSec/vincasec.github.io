@@ -3,7 +3,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Hello! My name is **VincaSec**, and I’m a **Business Informatics** student with a passion for technology, problem-solving, and cybersecurity. I got into tech early and have always been amazed by the systems that run our digital world.
+Hello! My name is **VincaSec**, and I’m a **Business Informatics** graduate with a passion for technology, problem-solving, and cybersecurity. I got into tech early and have always been amazed by the systems that run our digital world.
 
 During my studies, I had the opportunity to learn  various programming languages and technologies like **C#, SQL, Java, JavaScript, HTML, CSS, Python, C, MongoDB and ASP.NET**. I also worked on projects creating web and desktop applications, and learned **SAP Fiori** basics. While studying, I took the **CCNA** course alongside my studies, where I gained a strong understanding of networking concepts and how the internet works.
 
