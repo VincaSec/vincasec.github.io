@@ -6,11 +6,11 @@ categories: [Malware, Phishing, Email]
 
 Ova poruka se masovno širi i stiže do gotovo svih inboxa, jer je pažljivo maskirana, pa čak ni Gmail-ov anti-spam sistem nije uspeo da je detektuje. Nisam imao pristup celom headeru emaila, ali je jedan korisnik sa Reddita podelio zanimljive delove headera gde se vidi da priloženi fajl zapravo nije PDF, već slika navodne fakture, i da link vodi ka .js fajlu.
 
-![Phishing Email](https://bezbedanbalkan.net/attachment.php?aid=4705)
+![Phishing Email](/assets/2025/Email/fishpam.png)
 
 Na osnovu pretrage email adrese, naleteo sam na sajt CompanyWall gde se pokazuje da je u pitanju poslovni email jednog preduzetnika iz Bačke Palanke. Izgleda da je nalog najverovatnije kompromitovan na više načina.
 
-![Wall](https://bezbedanbalkan.net/attachment.php?aid=4721)
+![Wall](/assets/2025/Email/comp.png)
 
 
 ---
@@ -21,8 +21,8 @@ Malver u ovom slučaju koristi GeoIP servis kako bi odredio geografsku lokaciju 
 
 Uz to, napadači koriste tehniku „cloaking“, gde smeštaju spam sadržaj u `.txt` fajlove u poddirektorijume pored legitimnih `.js` fajlova. Kada pretraživački botovi zatraže URL, skripta učitava sadržaj `.txt` fajla i ubacuje ga u HTML stranice, omogućavajući prikaz različitog sadržaja botovima i stvarnim korisnicima.
 
-![VirusTotal](https://bezbedanbalkan.net/attachment.php?aid=4706)
-![VirusTotal](https://bezbedanbalkan.net/attachment.php?aid=4713)
+![VirusTotal](/assets/2025/Email/fishpam2.png)
+![VirusTotal](/assets/2025/Email/vt.png)
 
 ## Crowdsourced IDS pravila i identifikovane aktivnosti
 
@@ -34,7 +34,7 @@ Crowdsourced IDS pravila dodatno potvrđuju zlonamernu aktivnost:
 - Sumnjivi DNS zahtevi ka DynDNS domenima (`*.ddns.net`)  
 - Korišćenje `WScript.Shell` (Windows komponenta koja omogućava izvršavanje komandi iz skripti)
 
-![VirusTotal](https://bezbedanbalkan.net/attachment.php?aid=4714)
+![VirusTotal](/assets/2025/Email/vt1.png)
 
 ---
 
@@ -42,13 +42,13 @@ Crowdsourced IDS pravila dodatno potvrđuju zlonamernu aktivnost:
 
 U analiziranom slučaju, malver je ostavio četiri fajla, uključujući jedan PowerShell modul bez detekcija i dva izvršna `.exe` fajla. Ovi `.exe` fajlovi najverovatnije sadrže glavni payload malvera.
 
-![VirusTotal](https://bezbedanbalkan.net/attachment.php?aid=4715)
+![VirusTotal](/assets/2025/Email/vt2.png)
 
 Takođe, u priloženoj slici možete videti kako izgleda otvaranje `.txt` fajlova koji se preuzimaju sa malicioznih URL-ova. Takvi fajlovi služe za prikrivanje malicioznog koda i mogu omogućiti tzv. „cloaking“, injekciju sadržaja u legitimne stranice ili direktno preuzimanje i pokretanje dodatnih komponenti malvera.
 
-![Primer otvaranja zlonamernog .txt fajla](https://bezbedanbalkan.net/attachment.php?aid=4716)
-![Primer otvaranja zlonamernog .txt fajla](https://bezbedanbalkan.net/attachment.php?aid=4717)
-![Primer otvaranja zlonamernog .txt fajla](https://bezbedanbalkan.net/attachment.php?aid=4718)
+![Primer otvaranja zlonamernog .txt fajla](/assets/2025/Email/code1.png)
+![Primer otvaranja zlonamernog .txt fajla](/assets/2025/Email/code2.png)
+![Primer otvaranja zlonamernog .txt fajla](/assets/2025/Email/code.png)
 
 ---
 ## Lančana infekcija preko .js i PowerShell fajlova
@@ -61,8 +61,8 @@ Kada korisnik otvori takav `.js` fajl, on najverovatnije koristi `WScript.Shell`
 
 Jedan primer u lancu je i PowerShell skripta (hash: `4df9f243...`) koja je korišćena kao međukorak između `.js` fajla i `.exe` payload-a. Ovo ukazuje na višefazni napad: prvo socijalni inženjering (navođenje korisnika da otvori „fakturu“), zatim skriptna egzekucija, i na kraju preuzimanje/pokretanje glavnog malvera.
 
-![VirusTotal](https://bezbedanbalkan.net/attachment.php?aid=4719)
-![VirusTotal](https://bezbedanbalkan.net/attachment.php?aid=4720)
+![VirusTotal](/assets/2025/Email/vt3.png)
+![VirusTotal](/assets/2025/Email/vt4.png)
 
 ---
 
@@ -904,5 +904,5 @@ powershell -windowstyle hidden -noprofile -executionpolicy bypass -c
 ```
 Osigurava se da skripta izvršava u potpunoj tišini (bez vidljivog prozora), bez uticaja korisničkih profila, i bez ograničenja koja bi sprečila izvršenje koda, čime se povećava šansa da maliciozni payload uspešno prođe neprimećeno.
 
-![VirusTotal](https://bezbedanbalkan.net/attachment.php?aid=4724)
+![VirusTotal](/assets/2025/Email/evil.png)
 
