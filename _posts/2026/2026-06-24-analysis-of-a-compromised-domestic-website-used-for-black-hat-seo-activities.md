@@ -82,7 +82,7 @@ which is a Japanese e-commerce platform.
 
 ![Site](/assets/2026/seo-spam/km.png)
 
-Based on the collected evidence, it appears that the attackers leveraged an existing template or content from this platform to generate a large number of fraudulent pages on the compromised domain.
+It appears that the attackers leveraged an existing template or content from this platform to generate a large number of fraudulent pages on the compromised domain.
 
 ---
 
@@ -112,11 +112,7 @@ To reduce the risk of future compromises, I recommend implementing the following
 
 By analyzing the content served to the Googlebot User-Agent, I confirmed the presence of a Japanese SEO spam campaign on the analyzed domain.
 
-The collected evidence indicates the use of a cloaking mechanism that serves search engines with generated pages resembling a Japanese online store, including product images, SEO-optimized titles, and a large number of automatically generated URLs.
-
-Findings from the investigation indicate that the domain was compromised and leveraged for Black Hat SEO purposes.
-
-A complete determination of the root cause would require a detailed examination of the server, application source code, log files, and configuration files.
+The available evidence points to a cloaking setup where search engines were shown auto-generated pages imitating a Japanese e-commerce site, complete with product-style images, keyword-heavy titles, and a large set of dynamically created URLs. This strongly suggests the domain had been taken over and repurposed for Black Hat SEO activity. However, without a deeper technical inspection of the server environment, application code, access logs, and configuration settings, the exact origin of the compromise cannot be confirmed.
 
 ## Sources
 
